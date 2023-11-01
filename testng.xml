@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/viushi/Projects/Selenium Project/SeleniumTest">
+        <classes>
+            <class name="extentReporterListener.ExtentReporterNG">
+                <methods>
+                    <include name="initReports"/>
+                </methods>
+            </class>
+            <class name="com.crm.qa.testcases.ContactPageTest">
+                <methods>
+                    <include name="verifyContactLabelTest"/>
+                    <include name="verifyUserNameLabelTest"/>
+                    <include name="validateCreateNewContact"/>
+                </methods>
+            </class>
+            <class name="com.crm.qa.testcases.HomePageTest">
+                <methods>
+                    <include name="verifyHomepageTitleTest"/>
+                    <include name="verifyUserNameTest"/>
+                    <include name="verifyContactLinkTest"/>
+                    <include name="verifyDealsLinkTest"/>
+                </methods>
+            </class>
+            <class name="com.crm.qa.testcases.LoginPageTest">
+                <methods>
+                    <include name="loginPageTitleTest"/>
+                    <include name="validateCrmImageTest"/>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
